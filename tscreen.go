@@ -1134,7 +1134,7 @@ func (t *tScreen) parseRune(buf *bytes.Buffer) (bool, bool) {
 			t.escaped = false
 		}
 		ev := NewEventKey(KeyRune, rune(b[0]), mod)
-		t.PostEvent(ev)
+		t.PostEventWait(ev)
 		buf.ReadByte()
 		return true, true
 	}
@@ -1160,7 +1160,7 @@ func (t *tScreen) parseRune(buf *bytes.Buffer) (bool, bool) {
 					t.escaped = false
 				}
 				ev := NewEventKey(KeyRune, r, mod)
-				t.PostEvent(ev)
+				t.PostEventWait(ev)
 			}
 			for nin > 0 {
 				buf.ReadByte()
@@ -1187,11 +1187,14 @@ func (t *tScreen) scanInput(buf *bytes.Buffer, expire bool) {
 
 		partials := 0
 
+		t.Unlock()
 		if part, comp := t.parseRune(buf); comp {
+			t.Lock()
 			continue
 		} else if part {
 			partials++
 		}
+		t.Lock()
 
 		if part, comp := t.parseFunctionKey(buf); comp {
 			continue
