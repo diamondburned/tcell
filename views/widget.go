@@ -15,7 +15,11 @@
 package views
 
 import (
+<<<<<<< HEAD
 	"github.com/gdamore/tcell"
+=======
+	"maunium.net/go/tcell"
+>>>>>>> 703b3f6... Hack in strikethrough and italic
 )
 
 // Widget is the base object that all onscreen elements implement.

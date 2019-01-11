@@ -18,7 +18,11 @@ import (
 	"strings"
 	"sync"
 
+<<<<<<< HEAD
 	"github.com/gdamore/tcell"
+=======
+	"maunium.net/go/tcell"
+>>>>>>> 703b3f6... Hack in strikethrough and italic
 )
 
 // TextArea is a pannable 2 dimensional text widget. It wraps both

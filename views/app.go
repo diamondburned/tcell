@@ -17,7 +17,11 @@ package views
 import (
 	"sync"
 
+<<<<<<< HEAD
 	"github.com/gdamore/tcell"
+=======
+	"maunium.net/go/tcell"
+>>>>>>> 703b3f6... Hack in strikethrough and italic
 )
 
 // Application represents an event-driven application running on a screen.

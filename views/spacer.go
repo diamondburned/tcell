@@ -15,7 +15,11 @@
 package views
 
 import (
+<<<<<<< HEAD
 	"github.com/gdamore/tcell"
+=======
+	"maunium.net/go/tcell"
+>>>>>>> 703b3f6... Hack in strikethrough and italic
 )
 
 // Spacer is a Widget that occupies no visible real-estate.  It is useful to

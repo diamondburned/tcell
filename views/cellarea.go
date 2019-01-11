@@ -17,7 +17,11 @@ package views
 import (
 	"sync"
 
+<<<<<<< HEAD
 	"github.com/gdamore/tcell"
+=======
+	"maunium.net/go/tcell"
+>>>>>>> 703b3f6... Hack in strikethrough and italic
 )
 
 // CellModel models the content of a CellView.  The dimensions used within

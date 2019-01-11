@@ -100,6 +100,18 @@ func (s Style) Bold(on bool) Style {
 	return s.setAttrs(Style(AttrBold), on)
 }
 
+// Italic returns a new style based on s, with the italic attribute set
+// as requested.
+func (s Style) Italic(on bool) Style {
+	return s.setAttrs(Style(AttrItalic), on)
+}
+
+// Strikethrough returns a new style based on s, with the strikethrough attribute set
+// as requested.
+func (s Style) Strikethrough(on bool) Style {
+	return s.setAttrs(Style(AttrStrikethrough), on)
+}
+
 // Blink returns a new style based on s, with the blink attribute set
 // as requested.
 func (s Style) Blink(on bool) Style {

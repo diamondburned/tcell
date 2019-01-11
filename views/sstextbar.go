@@ -17,7 +17,11 @@ package views
 import (
 	"sync"
 
+<<<<<<< HEAD
 	"github.com/gdamore/tcell"
+=======
+	"maunium.net/go/tcell"
+>>>>>>> 703b3f6... Hack in strikethrough and italic
 )
 
 // SimpleStyledTextBar is a Widget that provides a single line of text, but

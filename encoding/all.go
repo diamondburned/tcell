@@ -16,7 +16,11 @@ package encoding
 
 import (
 	"github.com/gdamore/encoding"
+<<<<<<< HEAD
 	"github.com/gdamore/tcell"
+=======
+	"maunium.net/go/tcell"
+>>>>>>> 703b3f6... Hack in strikethrough and italic
 
 	"golang.org/x/text/encoding/charmap"
 	"golang.org/x/text/encoding/japanese"

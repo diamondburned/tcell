@@ -18,8 +18,13 @@ import (
 	"fmt"
 	"os"
 
+<<<<<<< HEAD
 	"github.com/gdamore/tcell"
 	"github.com/gdamore/tcell/views"
+=======
+	"maunium.net/go/tcell"
+	"maunium.net/go/tcell/views"
+>>>>>>> 703b3f6... Hack in strikethrough and italic
 )
 
 var app = &views.Application{}

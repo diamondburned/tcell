@@ -15,7 +15,11 @@
 package views
 
 import (
+<<<<<<< HEAD
 	"github.com/gdamore/tcell"
+=======
+	"maunium.net/go/tcell"
+>>>>>>> 703b3f6... Hack in strikethrough and italic
 )
 
 // BoxLayout is a container Widget that lays out its child widgets in

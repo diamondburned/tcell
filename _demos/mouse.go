@@ -23,8 +23,13 @@ import (
 	"fmt"
 	"os"
 
+<<<<<<< HEAD
 	"github.com/gdamore/tcell"
 	"github.com/gdamore/tcell/encoding"
+=======
+	"maunium.net/go/tcell"
+	"maunium.net/go/tcell/encoding"
+>>>>>>> 703b3f6... Hack in strikethrough and italic
 
 	"github.com/mattn/go-runewidth"
 )

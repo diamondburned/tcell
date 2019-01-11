@@ -19,6 +19,12 @@ func init() {
 		AttrOff:         "\x1b[0m",
 		Underline:       "\x1b[4m",
 		Bold:            "\x1b[1m",
+<<<<<<< HEAD
+=======
+		Italic:          "\x1b[3m",
+		Strikethrough:   "\x1b[9m",
+		Dim:             "\x1b[2m",
+>>>>>>> 703b3f6... Hack in strikethrough and italic
 		Blink:           "\x1b[5m",
 		Reverse:         "\x1b[7m",
 		EnterKeypad:     "\x1b[?1h\x1b=",

@@ -17,7 +17,11 @@ package views
 import (
 	"github.com/mattn/go-runewidth"
 
+<<<<<<< HEAD
 	"github.com/gdamore/tcell"
+=======
+	"maunium.net/go/tcell"
+>>>>>>> 703b3f6... Hack in strikethrough and italic
 )
 
 // Text is a Widget with containing a block of text, which can optionally

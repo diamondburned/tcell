@@ -59,6 +59,10 @@ type Terminfo struct {
 	AttrOff      string   `json:"sgr0,omitempty"`   // sgr0
 	Underline    string   `json:"smul,omitempty"`   // smul
 	Bold         string   `json:"bold,omitempty"`   // bold
+	Italic       string   `json:"sitm,omitempty"`   // sitm
+
+	Strikethrough string  `json:"strikethrough,omitempty"` // strikethrough
+
 	Blink        string   `json:"blink,omitempty"`  // blink
 	Reverse      string   `json:"rev,omitempty"`    // rev
 	Dim          string   `json:"dim,omitempty"`    // dim
