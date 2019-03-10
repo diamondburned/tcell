@@ -18,7 +18,7 @@ import (
 	"sync"
 
 <<<<<<< HEAD
-	"github.com/gdamore/tcell"
+	"github.com/diamondburned/tcell"
 =======
 	"maunium.net/go/tcell"
 >>>>>>> 703b3f6... Hack in strikethrough and italic

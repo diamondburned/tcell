@@ -25,7 +25,7 @@ import (
 
 	"golang.org/x/text/transform"
 
-	"github.com/gdamore/tcell/terminfo"
+	"github.com/diamondburned/tcell/terminfo"
 )
 
 // NewTerminfoScreen returns a Screen that uses the stock TTY interface

@@ -24,8 +24,8 @@ import (
 	"os"
 
 <<<<<<< HEAD
-	"github.com/gdamore/tcell"
-	"github.com/gdamore/tcell/encoding"
+	"github.com/diamondburned/tcell"
+	"github.com/diamondburned/tcell/encoding"
 =======
 	"maunium.net/go/tcell"
 	"maunium.net/go/tcell/encoding"
