@@ -3,10 +3,9 @@
 package terminfo
 
 func init() {
-	// X11 terminal emulator
+	// xterm terminal emulator (X Window System)
 	AddTerminfo(&Terminfo{
 		Name:            "xterm",
-		Aliases:         []string{"xterm-debian"},
 		Columns:         80,
 		Lines:           24,
 		Colors:          8,
@@ -32,7 +31,7 @@ func init() {
 		AltChars:        "``aaffggiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~",
 		EnterAcs:        "\x1b(0",
 		ExitAcs:         "\x1b(B",
-		Mouse:           "\x1b[M",
+		Mouse:           "\x1b[<",
 		MouseMode:       "%?%p1%{1}%=%t%'h'%Pa%e%'l'%Pa%;\x1b[?1000%ga%c\x1b[?1002%ga%c\x1b[?1003%ga%c\x1b[?1006%ga%c",
 		SetCursor:       "\x1b[%i%p1%d;%p2%dH",
 		CursorBack1:     "\b",
@@ -43,7 +42,7 @@ func init() {
 		KeyLeft:         "\x1bOD",
 		KeyInsert:       "\x1b[2~",
 		KeyDelete:       "\x1b[3~",
-		KeyBackspace:    "\xff",
+		KeyBackspace:    "\b",
 		KeyHome:         "\x1bOH",
 		KeyEnd:          "\x1bOF",
 		KeyPgUp:         "\x1b[5~",
