@@ -15,7 +15,7 @@
 package tcell
 
 import (
-	"github.com/lucasb-eyer/go-colorful"
+	"github.com/diamondburned/go-colorful"
 	"math"
 )
 
