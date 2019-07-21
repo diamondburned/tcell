@@ -24,6 +24,7 @@ package dynamic
 import (
 	"bytes"
 	"errors"
+	"fmt"
 	"os/exec"
 	"regexp"
 	"strconv"
@@ -126,7 +127,7 @@ func (tc *termcap) setupterm(name string) error {
 	tc.nums = make(map[string]int)
 
 	if err := cmd.Run(); err != nil {
-		return err
+		return fmt.Errorf("infocmp failed: %v", err)
 	}
 
 	// Now parse the output.
@@ -158,7 +159,8 @@ func (tc *termcap) setupterm(name string) error {
 	for _, val := range lines[1:] {
 		if (!strings.HasPrefix(val, "\t")) ||
 			(!strings.HasSuffix(val, ",")) {
-			return (errors.New("malformed infocmp: " + val))
+
+			return errors.New("malformed infocmp: " + val)
 		}
 
 		val = val[1:]
@@ -169,8 +171,9 @@ func (tc *termcap) setupterm(name string) error {
 		} else if k := strings.SplitN(val, "#", 2); len(k) == 2 {
 			u, err := strconv.ParseUint(k[1], 0, 0)
 			if err != nil {
-				return (err)
+				return fmt.Errorf("malformed infocmp %v: %v", k[1], err)
 			}
+
 			tc.nums[k[0]] = int(u)
 		} else {
 			tc.bools[val] = true
